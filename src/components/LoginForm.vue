@@ -43,7 +43,6 @@
 <script>
 import { mapActions } from "pinia";
 import useUserStore from "@/store/user";
-import { catchClause } from "@babel/types";
 
 export default {
   name: "LoginForm",
