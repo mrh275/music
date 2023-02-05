@@ -9,7 +9,7 @@ export default defineStore("user", {
     async register(values) {
       const userCredentials = await auth.createUserWithEmailAndPassword(
         values.email,
-        values.password
+        values.password,
       );
 
       await usersCollection.doc(userCredentials.user.uid).set({
